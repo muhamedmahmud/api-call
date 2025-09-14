@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FakeStore Products</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>🛍 FakeStore Products</h1>
+    <div class="filter-box">
+      <input type="text" id="search" placeholder="Search products..." />
+      <select id="category">
+        <option value="">All Categories</option>
+        <option value="men's clothing">Men's Clothing</option>
+        <option value="women's clothing">Women's Clothing</option>
+        <option value="jewelery">Jewelery</option>
+        <option value="electronics">Electronics</option>
+      </select>
+      <select id="sort">
+        <option value="">Sort by Price</option>
+        <option value="asc">Price: Low → High</option>
+        <option value="desc">Price: High → Low</option>
+      </select>
+      <button onclick="applyFilter()">Apply Filter</button>
+    </div>
+    <div id="products" class="products"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
